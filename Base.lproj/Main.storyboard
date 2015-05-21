@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qBe-f2-EbO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Checkbox-->
+        <scene sceneID="wgQ-Ou-VIz">
+            <objects>
+                <tableViewController id="qBe-f2-EbO" customClass="checkbox" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sSb-9i-pnL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="IQi-vd-hff">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IQi-vd-hff" id="Ds1-Cq-z1N">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJG-d5-mJR">
+                                            <rect key="frame" x="5" y="6" width="30" height="31.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="hUR-Ug-hLm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuX-Sq-sJQ">
+                                            <rect key="frame" x="43" y="11" width="537" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="GuX-Sq-sJQ" secondAttribute="trailing" constant="20" symbolic="YES" id="7aQ-aF-hHJ"/>
+                                        <constraint firstItem="lJG-d5-mJR" firstAttribute="leading" secondItem="Ds1-Cq-z1N" secondAttribute="leading" constant="5" id="WgD-qw-vLW"/>
+                                        <constraint firstItem="lJG-d5-mJR" firstAttribute="top" secondItem="Ds1-Cq-z1N" secondAttribute="top" constant="6" id="gLW-Gg-b01"/>
+                                        <constraint firstAttribute="bottom" secondItem="GuX-Sq-sJQ" secondAttribute="bottom" constant="11.5" id="mzK-7X-q3p"/>
+                                        <constraint firstItem="GuX-Sq-sJQ" firstAttribute="leading" secondItem="lJG-d5-mJR" secondAttribute="trailing" constant="8" symbolic="YES" id="ull-DO-m6H"/>
+                                        <constraint firstItem="GuX-Sq-sJQ" firstAttribute="top" secondItem="Ds1-Cq-z1N" secondAttribute="top" constant="11" id="war-7H-Xmo"/>
+                                        <constraint firstAttribute="bottom" secondItem="lJG-d5-mJR" secondAttribute="bottom" constant="6" id="wvz-Ex-BB4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qBe-f2-EbO" id="WEA-ZZ-0gf"/>
+                            <outlet property="delegate" destination="qBe-f2-EbO" id="1VW-kZ-JnP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8k-7X-Gmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="688"/>
+        </scene>
+    </scenes>
+</document>
